@@ -1,0 +1,161 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #2c2c2c;
+  background-color: #f0f0f0;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #4a4aff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #4242e0;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1.2;
+}
+input {
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-size: 1em;
+  font-family: inherit;
+  background-color: #f2f2f2;
+  border: 1px solid #1e3bb8;
+  color: #2c2c2c;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1e3bb8;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #4a4aff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.add {
+  width: 45%;
+}
+
+#search {
+  border-radius: 8px 0 0 8px;
+}
+#search-input {
+  border-radius: 0 8px 8px 0;
+  min-width: 20rem;
+  background-color: #ffffff;
+  border: 1px solid #1e3bb8;
+}
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  background-color: #ffffff;
+  margin-top: 1rem;
+  border-radius: 8px;
+}
+.aluno-list {
+  display: flex;
+  background-color: #ffffff;
+  text-align: left;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+  border-radius: 8px;
+  padding: 0.2rem 1rem;
+  margin: 1rem 0;
+}
+.aluno-list span {
+  font-size: 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+}
+.ro {
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+}
+h1 {
+  color: #1e3bb8;
+}
+.error {
+  margin-top: -1.5rem;
+  color: #cc0000;
+}
+.card input {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: start;
+  padding-top: 20%;
+  align-items: center;
+}
+
+.btns {
+  display: flex;
+  gap: 0.5rem;
+  height: 50%;
+}
+
+.bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #1f2a36;
+    background-color: #fefefe;
+  }
+  a:hover {
+    color: #6366ff;
+  }
+  button {
+    background-color: #e8e8e8;
+  }
+}
